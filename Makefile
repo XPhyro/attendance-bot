@@ -1,5 +1,5 @@
 CC	   = gcc
-CFLAGS = -shared -O3 -lX11 -fPIC -Wl,-soname,scrnsht
+CFLAGS = -shared -O3 -lX11 -fPIC -Wl,-soname,scrnsht -Wno-implicit-function-declaration
 
 SRC    = scrnsht.c
 
