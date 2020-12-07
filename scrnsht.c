@@ -2,8 +2,7 @@
 #include <X11/X.h>
 #include <X11/Xlib.h>
 
-// Compile hint: gcc -shared -O3 -lX11 -fPIC -Wl,-soname,scrnsht -o scrnsht.so scrnsht.c
-// https://stackoverflow.com/a/16141058/8403070
+// Taken from https://stackoverflow.com/a/16141058/8403070.
 
 void capture(const int, const int, const int, const int, unsigned char *);
 void capture(const int xx,const int yy,const int W, const int H, /*out*/ unsigned char *data)
