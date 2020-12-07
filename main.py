@@ -38,7 +38,7 @@ if __name__ == "__main__":
         sleep(5)
 
         if not ImageChops.difference(refim, im).getbbox():
-            print("Taking attendance...")
+            print("Submitting attendance...")
 
             sleep(2)
             click(yescoord[0], yescoord[1])
@@ -46,6 +46,7 @@ if __name__ == "__main__":
             click(submitcoord[0], submitcoord[1])
 
             count += 1
-            print(f"Took attendance on {dt.now()}.")
+
+            print(f"Submitting attendance on {dt.now()}.")
 
             sleep(900)
