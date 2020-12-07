@@ -10,10 +10,9 @@ from pyautogui import click
 
 
 libname = "scrnsht.so"
-refimname = "reference.png"
-absdir = path.dirname(path.abspath(__file__)) + path.sep
-scrnsht = CDLL(absdir + libname)
-refim = Image.open(absdir + refimname).convert("RGB")
+refimpath = "/usr/share/attendance-bot/reference.png"
+scrnsht = CDLL(libname)
+refim = Image.open(refimpath).convert("RGB")
 yescoord = (29, 124)
 submitcoord = (1281, 1059)
 reqcount = 3
