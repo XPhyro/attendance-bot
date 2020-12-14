@@ -1,4 +1,4 @@
-CC	   = gcc
+CC     = gcc
 CFLAGS = -shared -O3 -lX11 -fPIC -Wl,-soname,scrnsht -Wno-implicit-function-declaration
 
 SRC    = scrnsht.c
@@ -6,7 +6,7 @@ SRC    = scrnsht.c
 all: scrnsht
 
 scrnsht: ${SRC}
-	${CC} ${CFLAGS} -o scrnsht.so scrnsht.c
+	${CC} ${CFLAGS} -o scrnsht.so ${SRC}
 
 clean:
 	rm -f scrnsht.so
